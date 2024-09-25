@@ -113,7 +113,7 @@ const filteredPortfolioItems = computed(() => {
   
   
 
-  <section id="contact">
+  <section id="contact" class="svg-contact-back">
     <div class="contact_section">
       <div class="contact_background">
         <h2>Contact</h2>
@@ -131,7 +131,7 @@ const filteredPortfolioItems = computed(() => {
                 <g clip-path="url(#clip0_53_29)">
                   <path
                     d="M246 0H32C14.33 0 0 14.33 0 32V246C0 263.67 14.33 278 32 278H246C263.67 278 278 263.67 278 246V32C278 14.33 263.67 0 246 0ZM167.33 225.32C162.99 226.2 161.4 223.41 161.4 221.07C161.4 218.13 161.54 208.58 161.54 196.69C161.54 188.31 158.79 183.03 155.61 180.24C175.13 178.04 195.51 170.56 195.51 136.49C195.51 126.8 192.18 118.87 186.55 112.71C187.41 110.51 190.45 101.39 185.67 89.21C185.67 89.21 178.29 86.85 161.66 98.31C154.72 96.4 147.2 95.37 139.83 95.37C132.46 95.37 125.12 96.36 118 98.31C101.36 86.87 93.99 89.21 93.99 89.21C89.22 101.41 92.24 110.51 93.11 112.71C87.62 118.87 84.15 126.8 84.15 136.49C84.15 170.54 104.53 178.18 123.91 180.24C121.46 182.44 119.14 186.4 118.42 192.13C113.34 194.49 100.78 198.31 92.96 184.8C92.96 184.8 88.33 176.3 79.52 175.7C79.52 175.7 70.99 175.7 78.95 181.12C78.95 181.12 84.74 183.77 88.64 194.04C88.64 194.04 93.7 209.9 117.99 204.62C117.99 211.97 118.13 219.02 118.13 221.07C118.13 223.41 116.54 226.2 112.2 225.32C77.5 213.57 52.5 180.4 52.5 141.19C52.5 92.14 91.54 52.51 139.82 52.51H139.84C187.98 52.51 227.16 92.15 227.02 141.19C227.02 180.4 202.01 213.57 167.31 225.32H167.33Z"
-                    fill="#1B2B1C" />
+                    fill="#151a20" />
                 </g>
                 <defs>
                   <clipPath id="clip0_53_29">
@@ -146,7 +146,7 @@ const filteredPortfolioItems = computed(() => {
                 <g clip-path="url(#clip0_53_27)">
                   <path
                     d="M246 0H32C14.33 0 0 14.33 0 32V246C0 263.67 14.33 278 32 278H246C263.67 278 278 263.67 278 246V32C278 14.33 263.67 0 246 0ZM76.8 63.32C85.88 63.32 93.24 70.69 93.24 79.77C93.24 88.85 85.88 96.22 76.8 96.22C67.72 96.22 60.36 88.85 60.36 79.77C60.36 70.69 67.72 63.32 76.8 63.32ZM93.37 214.68H60.23V109.39H93.37V214.68ZM219.31 214.68H186.23V159.4C186.23 126.17 146.26 128.67 146.26 159.4V214.68H113.32V109.39H146.26V123.6C160.18 98.07 219.3 96.16 219.3 148.02V214.68H219.31Z"
-                    fill="#1B2B1C" />
+                    fill="#151a20" />
                 </g>
                 <defs>
                   <clipPath id="clip0_53_27">
@@ -168,11 +168,17 @@ const filteredPortfolioItems = computed(() => {
       </div>
     </div>
   </section>
+
 </template>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+.svg-contact-back {
+  background-image: url("../assets/img/background-svg-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 .hero-container {
   display: grid;
   grid-template-columns: 670px 474px;
@@ -243,8 +249,8 @@ const filteredPortfolioItems = computed(() => {
   align-self: center;
   background-color: var(--secondary-color);
   height: 100%;
-  width: 1288px;
-  border-radius: 48px;
+  width: 100%;
+  /* border-radius: 48px; */
   padding: 32px 0;
 
   @media screen and (max-width: 768px) {
@@ -269,7 +275,7 @@ const filteredPortfolioItems = computed(() => {
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
-    border-radius: 64px 64px 0 0;
+    border-radius: 0;
     padding-bottom: 16px;
     padding-top: 32px;
     flex-direction: column;
@@ -794,7 +800,7 @@ a.active {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   height: 100%;
   width: 1288px;
   border-radius: 48px 48px 0 0;
@@ -804,7 +810,7 @@ a.active {
   @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
-    /* border-radius: 64px 64px 0 0; */
+    border-radius: 0;
     padding-bottom: 16px;
     padding-top: 32px;
   }
@@ -825,6 +831,7 @@ a.active {
   grid-template-columns: 278px 278px 278px 278px;
   grid-template-rows: 278px 180px;
   grid-gap: 16px;
+  margin-bottom: 64px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 180px 180px;
@@ -837,7 +844,7 @@ a.active {
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: var(--main-color);
+  background-color: var(--tertiary-color);
   border-radius: var(--main-border-radius);
 
   @media screen and (max-width: 768px) {
@@ -883,7 +890,7 @@ a.active {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 5;
-  background-color: var(--main-color);
+  background-color: var(--tertiary-color);
   border-radius: var(--main-border-radius);
   display: flex;
   justify-content: center;
@@ -959,21 +966,21 @@ footer {
   height: 64px;
   width: 1288px;
   padding-top: 32px;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   @media screen and (max-width: 768px) {
     padding-top: 0;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
   }
 }
 
 .footer_container p {
   font-size: 16px;
   font-weight: 400;
-  color: var(--main-color);
+  color: var(--secondary-color);
   font-weight: 500;
   @media screen and (max-width: 768px) {
-    color: var(--main-color);
+    color: var(--white-color);
     font-weight: 500;
     
   }

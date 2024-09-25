@@ -122,7 +122,7 @@ const filteredPortfolioItems = computed(() => {
             <h3>Phone</h3>
             <a href="tel:+4591950940">+45 91 95 09 40</a>
             <h3>Email</h3>
-            <a href="mailto:kamkre01@easv365.dk">kamkre01@easv365.dk</a>
+            <a href="mailto:kamilkregiel01@gmail.com">kamilkregiel01@gmail.com</a>
             <h3>Address</h3>
             <p>Esbjerg 6700, Denmark</p>
           </div>

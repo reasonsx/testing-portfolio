@@ -136,7 +136,7 @@ li {
 }
 
 li:hover {
-    background-color: var(--tertiary-color);
+    /* background-color: rgba(239, 239, 239, 0.80); */
     transition: all 0.4s ease;
 }
 
@@ -153,6 +153,14 @@ a {
     text-decoration: none;
     align-items: center;
     justify-content: center;
+}
+a:hover {
+    scale: 1.05;
+    transition: all 0.2s ease;
+}
+a:not(:hover) {
+    scale: 1.0;
+    transition: all 0.2s ease-out;
 }
 a.active {
     background-color: var(--white-color);

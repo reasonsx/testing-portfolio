@@ -323,8 +323,9 @@ const filteredPortfolioItems = computed(() => {
   --white-color: #efefef;
   --gray-color: #313131;
   --main-color: #1B2B1C;
+  /* --secondary-color: #DEFE10; */
   --secondary-color: #DEFE10;
-  --tertiary-color: #6A1B9A;
+  --tertiary-color: #151a20;
   --main-border-radius: 32px;
   --font-weight: 700;
   --default-font-size: 32px;
@@ -524,7 +525,6 @@ li {
 }
 
 li:hover {
-  background-color: var(--tertiary-color);
   transition: all 0.4s ease;
 }
 
@@ -835,7 +835,7 @@ a.active {
   grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 5;
-  background-color: var(--main-color);
+  background-color: var(--tertiary-color);
   border-radius: var(--main-border-radius);
   display: flex;
   justify-content: center;

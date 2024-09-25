@@ -24,16 +24,20 @@ const filteredPortfolioItems = computed(() => {
 </script>
 
 <template>
-  <div class="logo_container">
+  <!-- <div class="logo_container">
   <svg class="logo_svg" width="567" height="595" viewBox="0 0 567 595" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M247.13 223.431L171.239 299.185L247.13 374.966V595L159.75 551.35V411.103L87.343 338.792V515.434L0 471.821V128.349L87.343 82.9627V259.605L159.75 187.294V45.395L247.13 0V223.431Z" fill="#1E3421"/>
 <path d="M319.537 223.431L395.429 299.185L319.537 374.966V595L406.917 551.35V411.103L479.324 338.792V515.434L566.667 471.821V128.349L479.324 82.9627V259.605L406.917 187.294V45.395L319.537 0V223.431Z" fill="#1E3421"/>
 </svg>
-</div>
+</div> -->
 
   <section id="home" class="home-section">
     <!-- <div class="about_section"> -->
-      <div class="about_background">
+      <div class="hero-background">
+        <div class="hero-container">
+          <div class="hero-box-1"></div>
+          <div class="hero-box-2"><img src="../assets/img/icon_kk.svg" alt=""></div>
+        </div>
         <!-- <h2>Hey there! <br>I'm Kamil Kregiel and I'm a multimedia designer :)</h2> -->
       </div>
 
@@ -51,6 +55,30 @@ const filteredPortfolioItems = computed(() => {
       <button class="download_button"><a :href="portfolioItem.link" target="_blank"><p>View</p></a></button>
     </div>
   </section> -->
+  <section id="services">
+    <div class="services-background">
+    <div class="services_section">
+      <div class="services_background">
+        <h2>About me</h2>
+        <div class="services_container" id="about">
+          <div class="left_services_box">
+            <p>Offering a range of skills, I bring your digital projects to life with expertise in design and
+              development.</p>
+          </div>
+          <div class="services_icon"><img src="../assets/img/figma.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/xd.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/illustrator.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/photoshop.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/indesign.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/vuejs.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/scss.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/wordpress.svg" alt="" draggable="false"></div>
+          <div class="services_icon"><img src="../assets/img/javascript.svg" alt="" draggable="false"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
   <section id="projects">
     <div class="new-projects-background">
 
@@ -83,28 +111,7 @@ const filteredPortfolioItems = computed(() => {
 </section>
 
   
-  <section id="services">
-    <div class="services_section">
-      <div class="services_background">
-        <h2>Services</h2>
-        <div class="services_container" id="about">
-          <div class="left_services_box">
-            <p>Offering a range of skills, I bring your digital projects to life with expertise in design and
-              development.</p>
-          </div>
-          <div class="services_icon"><img src="../assets/img/figma.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/xd.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/illustrator.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/photoshop.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/indesign.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/vuejs.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/scss.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/wordpress.svg" alt="" draggable="false"></div>
-          <div class="services_icon"><img src="../assets/img/javascript.svg" alt="" draggable="false"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="contact">
     <div class="contact_section">
@@ -165,9 +172,70 @@ const filteredPortfolioItems = computed(() => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 670px 474px;
+  grid-template-rows: 474px;
+  grid-gap: 16px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 180px 240px 180px 116px;
+  }
+}
+.hero-box-1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: var(--secondary-color);
+  border-radius: var(--main-border-radius);
+
+  @media screen and (max-width: 768px) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+.hero-box-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: var(--secondary-color);
+  border-radius: var(--main-border-radius);
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+.hero-box-2 img {
+  width: auto;
+  height: 442px;
+  border-radius: var(--main-border-radius);
+  object-fit: cover;
+
+  @media screen and (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+    border-radius: var(--main-border-radius);
+    object-fit: cover;
+  }
+}
+
 .home-section {
   height: 1000px;
 }
+
 .new-projects-background {
   display: flex;
   flex-direction: column;
@@ -731,6 +799,7 @@ a.active {
   width: 1288px;
   border-radius: 48px 48px 0 0;
   padding-top: 32px;
+  margin-top: 128px ;
 
   @media screen and (max-width: 768px) {
     width: 100%;

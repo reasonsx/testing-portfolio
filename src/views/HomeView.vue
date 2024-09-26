@@ -165,7 +165,7 @@ const filteredPortfolioItems = computed(() => {
             </a>
           </div>
           <div class="cv_box">
-            <a href="../assets/pdf/CV-Kamil-Kregiel.pdf" download="CV-Kamil-Kregiel.pdf">
+            <a href="https://drive.google.com/file/d/1zbz2p5eYZXmHx0XrR14NC5aTdDdMHtXc/view?usp=sharing" target="_blank">
               <h3>CV</h3>
             </a>
           </div>
@@ -181,9 +181,11 @@ const filteredPortfolioItems = computed(() => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .colorful-text {
   color: var(--secondary-color);
 }
+
 .hero-box-1 h3 {
   font-size: 42px;
   color: var(--white-color);
@@ -265,10 +267,7 @@ const filteredPortfolioItems = computed(() => {
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    display: none;
   }
 }
 .hero-box-2 img {

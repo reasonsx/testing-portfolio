@@ -275,11 +275,12 @@ const filteredPortfolioItems = computed(() => {
   padding: 0 0 64px 0;
 
   @media screen and (max-width: 768px) {
-    width: auto;
+    width: 100%;
     height: auto;
+    padding: 0;
     /* border-radius: 64px 64px 0 0; */
-    padding-bottom: 16px;
-    padding-top: 32px;
+    /* padding-bottom: 16px; */
+    /* padding-top: 32px; */
   }
 }
 
@@ -287,7 +288,7 @@ const filteredPortfolioItems = computed(() => {
   display: flex;
   flex-direction: flex;
   align-self: center;
-  background-color: #151a20;
+  background-color: var(--tertiary-color);
   height: 474px;
   width: 1160px;
   border-radius: 32px;
@@ -295,13 +296,14 @@ const filteredPortfolioItems = computed(() => {
   padding: 16px;
 
   @media screen and (max-width: 768px) {
-    width: 376px;
+    width: 100%;
     height: 100%;
     border-radius: 0;
     padding-bottom: 16px;
     padding-top: 32px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    background-color: var(--main-color);
   }
 }
 .new-projects-container h3 {
@@ -361,6 +363,11 @@ const filteredPortfolioItems = computed(() => {
   width: 180px;
   height: auto;
   margin-top: auto;
+  @media screen and (max-width: 768px){
+    width: 372px;
+    margin-top: 16px;
+    
+  }
 }
 .text-box button {
   width: 180px;
@@ -377,8 +384,11 @@ const filteredPortfolioItems = computed(() => {
   margin-top: auto;         /* Push the button to the bottom */
   /* align-self: center; */
   @media screen and (max-width: 768px){
+    background-color: var(--tertiary-color);
     align-self: center;
     height: 48px;
+    width: 372px;
+    margin-bottom: 16px;
     
   }
 }
@@ -392,7 +402,7 @@ const filteredPortfolioItems = computed(() => {
   @media screen and (max-width: 768px) {
     width: 376px;
     height: 240px;
-    border-radius: 32px;
+    border-radius: 24px;
     margin-left: 0;
     
   }
@@ -405,7 +415,7 @@ const filteredPortfolioItems = computed(() => {
   @media screen and (max-width: 768px) {
     width: 376px;
     height: 240px;
-    border-radius: 32px;
+    border-radius: 24px;
     object-fit: cover;
     
   }
@@ -426,6 +436,13 @@ const filteredPortfolioItems = computed(() => {
   color: var(--secondary-color);
   margin: 0;
   height: 140px;
+  @media screen and (max-width: 768px) {
+    font-size: 80px;
+    height: 112px;
+    margin-left: 16px;
+    margin-top: 32px;
+    
+  }
 }
 
 

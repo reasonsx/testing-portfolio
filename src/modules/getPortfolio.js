@@ -27,7 +27,7 @@ const getPortfolio = () => {
       title: 'Eventezy',
       date: 'October 2023',
       description: "In my first semester, I created Eventezy, a fully coded website from scratch. It's your go-to platform for concert and event tickets, designed for seamless browsing and purchasing. My portfolio highlights the journey from conception to execution, showcasing my passion for crafting intuitive digital solutions that bring people closer to unforgettable moments.",
-      image: '../src/assets/img/event.png',
+      image: require('../assets/img/fantasy-fest.png'),
       link: 'https://eventezy.netlify.app/',
     },
     {

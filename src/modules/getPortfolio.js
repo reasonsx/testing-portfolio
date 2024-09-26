@@ -9,7 +9,7 @@ const getPortfolio = () => {
       title: 'Fantasy Quest',
       date: 'May 2024',
       description: "For our second-semester project, I developed a dynamic website for the Fantasy Festival Esbjerg 2024, capturing the magic of its Fantasy Quest theme with event listings, an interactive map, and integrated ticketing. Designed with responsive layouts and custom fantasy elements, the website offers an immersive experience across all devices, showcasing my ability to blend creativity and functionality to engage users and promote a vibrant cultural event.",
-      image: '../src/assets/img/fantasy-fest.png',
+      image: require('../src/assets/img/fantasy-fest.png'),
       link: 'https://fantasy-quest-d735e.web.app/',
     },
     {

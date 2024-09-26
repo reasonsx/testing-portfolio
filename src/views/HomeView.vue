@@ -196,6 +196,10 @@ const filteredPortfolioItems = computed(() => {
   background-repeat: no-repeat;
   background-size: cover;
   height: 920px;
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    
+  }
 }
 .hero-container {
   display: grid;
@@ -784,6 +788,10 @@ a.active {
   border-radius: 3rem;
   padding: 32px;
   width: 1;
+  @media screen and (max-width: 768px) {
+    border-radius: 24px;
+    
+  }
 }
 .left_contact_box h3 {
   font-size: 48px;

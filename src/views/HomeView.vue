@@ -102,7 +102,7 @@ const filteredPortfolioItems = computed(() => {
       <h3>{{ portfolioItem.title }}</h3>
       <h5>{{ portfolioItem.date }}</h5>
     <p>{{ portfolioItem.description }}</p>
-   <!-- <button>View</button>  -->
+    <a :href="portfolioItem.link" target="_blank"><button>View</button></a>
   </div>
     
     <div class="new-projects-box"><img :src="portfolioItem.image" alt="">
@@ -275,7 +275,7 @@ const filteredPortfolioItems = computed(() => {
   padding: 0 0 64px 0;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: auto;
     height: auto;
     /* border-radius: 64px 64px 0 0; */
     padding-bottom: 16px;
@@ -295,7 +295,7 @@ const filteredPortfolioItems = computed(() => {
   padding: 16px;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 376px;
     height: 100%;
     border-radius: 0;
     padding-bottom: 16px;
@@ -320,19 +320,19 @@ const filteredPortfolioItems = computed(() => {
   width: 458px;
   display: flex;              /* Make it a flex container */
   flex-direction: column;     /* Stack children vertically */
-  justify-content: space-between; /* Space elements vertically */
   height: 100%;              /* Make it take full height */
   @media screen and (max-width: 768px){
     width: 376px;
     
   }
 }
+
 .text-box p {
   font-size: 20px;
   color: var(--white-color);
   font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding: 8px 0 0 0;
   width: 556px;
    @media screen and (max-width: 768px){
     font-size: 16px;
@@ -341,7 +341,7 @@ const filteredPortfolioItems = computed(() => {
   }
   
 }
-.new-projects-box:hover {
+/* .new-projects-box:hover {
   scale: 0.97;
   transition: all 0.3s ease;
 }
@@ -349,17 +349,26 @@ const filteredPortfolioItems = computed(() => {
 .new-projects-box:not(:hover) {
   scale: 1.0;
   transition: all 0.3s ease-out;
-}
+} */
 .text-box h5 {
   font-size: 20px;
   margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+.text-box a {
+  width: 180px;
+  height: auto;
+  margin-top: auto;
 }
 .text-box button {
   width: 180px;
-  height: 64px;
+  height: 48px;
   background-color: var(--main-color);
   border-radius: 32px;
   border: none;
+  cursor: pointer;
   color: var(--secondary-color);
   font-size: 16px;
   font-weight: 500;
@@ -406,6 +415,10 @@ const filteredPortfolioItems = computed(() => {
   flex-direction: column;
   align-self: center;
   width: 1160px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    
+  }
 }
 
 .new-projects-background h2 {

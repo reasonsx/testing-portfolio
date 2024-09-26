@@ -6,29 +6,37 @@ const getPortfolio = () => {
   const portfolioItems = ref([
     {
       id: 1,
+      title: 'Fantasy Quest',
+      date: 'May 2024',
+      description: "For our second-semester project, I developed a dynamic website for the Fantasy Festival Esbjerg 2024, capturing the magic of its Fantasy Quest theme with event listings, an interactive map, and integrated ticketing. Designed with responsive layouts and custom fantasy elements, the website offers an immersive experience across all devices, showcasing my ability to blend creativity and functionality to engage users and promote a vibrant cultural event.",
+      image: '../src/assets/img/fantasy-fest.png',
+      link: 'https://fantasy-quest-d735e.web.app/',
+    },
+    {
+      id: 2,
       title: 'Trapholt Redesign',
-      date: 'October 2023',
-      description: 'In our first semester, my team and I transformed Trapholt into an engaging paradise for families. Over three weeks, we developed a brand new identity that makes the museum a vibrant and welcoming space for children and adults alike. Our project redefined Trapholt as a place of learning and fun, infusing it with interactive and immersive elements. This redesign, which I’m proud to showcase in my portfolio, turns every visit into an adventure that sparks the imagination and delights visitors of all ages.',
-      image: 'src/assets/img/trapholt_website.png',
+      date: 'December 2023',
+      description: 'On the first semester, my team transformed Trapholt into an engaging paradise for families. Over three weeks, we developed a brand new identity that makes the museum a welcoming space for children and adults alike. Our project redefined Trapholt as a place of learning and fun, infusing it with interactive elements. This redesign, which I’m proud to showcase in my portfolio, turns every visit into an adventure that sparks the imagination and delights visitors of all ages.',
+      image: '../src/assets/img/trapholt_website.png',
       link: 'https://trapholt-redesign.netlify.app/',
       category: 'web'
   
     },
     {
-      id: 2,
+      id: 3,
       title: 'Eventezy',
       date: 'October 2023',
       description: "In my first semester, I created Eventezy, a fully coded website from scratch. It's your go-to platform for concert and event tickets, designed for seamless browsing and purchasing. My portfolio highlights the journey from conception to execution, showcasing my passion for crafting intuitive digital solutions that bring people closer to unforgettable moments.",
-      image: 'src/assets/img/eventezy-picture.png',
+      image: '../src/assets/img/event.png',
       link: 'https://eventezy.netlify.app/',
     },
     {
-      id: 3,
+      id: 4,
       title: 'International Day',
       date: 'October 2023',
       description: "I created a vibrant poster to promote our school's International Day, a yearly celebration of cultural diversity. With bold colors and captivating imagery, my design invites everyone to immerse themselves in the rich tapestry of global traditions. This project highlights my ability to blend graphic design with cultural appreciation, enticing others to join in the festivities and embrace the beauty of our diverse community.",
-      image: 'src/assets/img/international_day_poster.png',
-      link: 'src/assets/pdf/international_day_df.pdf',
+      image: '../src/assets/img/int-day.png',
+      link: '../src/assets/pdf/international_day_df.pdf',
     },
     // {
     //   id: 4,
@@ -46,14 +54,6 @@ const getPortfolio = () => {
     //   image: 'src/assets/img/esbjerg_poster.png',
     //   link: 'src/assets/pdf/esbjerg_poster.pdf',
     // },
-    {
-      id: 6,
-      title: 'Fantasy Quest',
-      date: 'October 2023',
-      description: "For our second-semester project, I developed a dynamic website for the Fantasy Festival Esbjerg 2024. The site captures the magic of the festival's Fantasy Quest theme, featuring event listings, an interactive map, and integrated ticketing. Designed with responsive layouts and custom fantasy elements, the website delivers an immersive experience across all devices. This project highlights my ability to merge creativity with functionality, building a captivating digital space that enhances user engagement and promotes a vibrant cultural event.",
-      image: 'src/assets/img/',
-      link: 'https://fantasy-quest-d735e.web.app/',
-    },
   ])
 
   return { portfolioItems }

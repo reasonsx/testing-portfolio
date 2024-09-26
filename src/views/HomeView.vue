@@ -857,7 +857,7 @@ a.active {
 }
 
 .contact_background h2 {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .contact_container {

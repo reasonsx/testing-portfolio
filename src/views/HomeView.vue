@@ -55,7 +55,7 @@ const filteredPortfolioItems = computed(() => {
       <button class="download_button"><a :href="portfolioItem.link" target="_blank"><p>View</p></a></button>
     </div>
   </section> -->
-  <section id="services">
+  <section id="about" class="about-section">
     <div class="services-background">
     <div class="services_section">
       <div class="services_background">
@@ -79,7 +79,7 @@ const filteredPortfolioItems = computed(() => {
     </div>
   </div>
   </section>
-  <section id="projects">
+  <section id="projects" class="projects-section">
     <div class="new-projects-background">
 
       <!-- <div class="new-projects-container">
@@ -173,11 +173,29 @@ const filteredPortfolioItems = computed(() => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.svg-contact-back {
+.home-section {
+  height: 900px;
   background-image: url("../assets/img/background-svg-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+}
+.projects-section {
+  height: auto;
+  background-image: url("../assets/img/background-svg-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-section {
+  height: 800px;
+  background-image: url("../assets/img/background-svg-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.svg-contact-back {
+  background-image: url("../assets/img/back-yellow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 920px;
 }
 .hero-container {
   display: grid;
@@ -238,9 +256,7 @@ const filteredPortfolioItems = computed(() => {
   }
 }
 
-.home-section {
-  height: 1000px;
-}
+
 
 .new-projects-background {
   display: flex;
@@ -383,6 +399,7 @@ const filteredPortfolioItems = computed(() => {
   display: flex;
   flex-direction: column;
   align-self: center;
+  background-color: var(--main-color);
 }
 
 .new-projects-background h2 {
@@ -706,6 +723,10 @@ a.active {
   flex-direction: column;
   align-self: center;
 }
+.services_background h2 {
+  color: var(--main-color);
+}
+
 
 .services_container {
   display: grid;
@@ -820,10 +841,15 @@ a.active {
   display: flex;
   flex-direction: column;
   align-self: center;
+  @media screen and (max-width: 768px) {
+    width: 376px;
+    height: 100%;
+    margin-top: 96px;
+  }
 }
 
 .contact_background h2 {
-  color: var(--main-color);
+  color: var(--tertiary-color);
 }
 
 .contact_container {
@@ -964,23 +990,22 @@ footer {
   justify-content: center;
   align-items: center;
   height: 64px;
-  width: 1288px;
-  padding-top: 32px;
-  /* background-color: var(--secondary-color); */
+  width: 100%;
+  background-color: var(--secondary-color);
   @media screen and (max-width: 768px) {
     padding-top: 0;
     width: 100%;
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
   }
 }
 
 .footer_container p {
   font-size: 16px;
-  font-weight: 400;
-  color: var(--secondary-color);
+  font-weight: 500;
+  color: var(--tertiary-color);
   font-weight: 500;
   @media screen and (max-width: 768px) {
-    color: var(--white-color);
+    color: var(--tertiary-color);
     font-weight: 500;
     
   }

@@ -94,8 +94,10 @@ const filteredPortfolioItems = computed(() => {
           </select>
         </div>
       </div> -->
+      <h2>Projects</h2>
 <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="new-projects-background">
   <div class="new-projects-container">
+    
     <div class="text-box">
       <h3>{{ portfolioItem.title }}</h3>
       <h5>{{ portfolioItem.date }}</h5>
@@ -267,11 +269,10 @@ const filteredPortfolioItems = computed(() => {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  background-color: var(--secondary-color);
   height: 100%;
   width: 100%;
   /* border-radius: 48px; */
-  padding: 32px 0;
+  padding: 0 0 64px 0;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -281,6 +282,7 @@ const filteredPortfolioItems = computed(() => {
     padding-top: 32px;
   }
 }
+
 .new-projects-container {
   display: flex;
   flex-direction: flex;
@@ -403,11 +405,14 @@ const filteredPortfolioItems = computed(() => {
   display: flex;
   flex-direction: column;
   align-self: center;
-  background-color: var(--main-color);
+  width: 1160px;
 }
 
 .new-projects-background h2 {
-  color: var(--main-color);
+  font-size: 96px;
+  color: var(--secondary-color);
+  margin: 0;
+  height: 140px;
 }
 
 
@@ -755,7 +760,6 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
   border-radius: var(--main-border-radius);
 
   @media screen and (max-width: 768px) {

@@ -27,7 +27,7 @@ const getPortfolio = () => {
       title: 'Eventezy',
       date: 'October 2023',
       description: "In my first semester, I created Eventezy, a fully coded website from scratch. It's your go-to platform for concert and event tickets, designed for seamless browsing and purchasing. My portfolio highlights the journey from conception to execution, showcasing my passion for crafting intuitive digital solutions that bring people closer to unforgettable moments.",
-      image: '../src/assets/img/eventezy-picture.png',
+      image: '../src/assets/img/event.png',
       link: 'https://eventezy.netlify.app/',
     },
     {
@@ -35,7 +35,7 @@ const getPortfolio = () => {
       title: 'International Day',
       date: 'October 2023',
       description: "I created a vibrant poster to promote our school's International Day, a yearly celebration of cultural diversity. With bold colors and captivating imagery, my design invites everyone to immerse themselves in the rich tapestry of global traditions. This project highlights my ability to blend graphic design with cultural appreciation, enticing others to join in the festivities and embrace the beauty of our diverse community.",
-      image: '../src/assets/img/international_day_poster.png',
+      image: '../src/assets/img/int-day.png',
       link: '../src/assets/pdf/international_day_df.pdf',
     },
     // {

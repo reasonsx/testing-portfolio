@@ -35,7 +35,13 @@ const filteredPortfolioItems = computed(() => {
     <!-- <div class="about_section"> -->
       <div class="hero-background">
         <div class="hero-container">
-          <div class="hero-box-1"></div>
+          <div class="hero-box-1">
+            <h3>Hello there!</h3>
+            <h3>I'm <span class="colorful-text">Kamil Kregiel</span> a Multimedia Designer from <span class="colorful-text">Poland</span>, focused on developing websites that connect with users.
+
+</h3>
+
+          </div>
           <div class="hero-box-2"><img src="../assets/img/icon_kk.svg" alt=""></div>
         </div>
         <!-- <h2>Hey there! <br>I'm Kamil Kregiel and I'm a multimedia designer :)</h2> -->
@@ -175,6 +181,21 @@ const filteredPortfolioItems = computed(() => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.colorful-text {
+  color: var(--secondary-color);
+}
+.hero-box-1 h3 {
+  font-size: 42px;
+  color: var(--white-color);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  @media screen and (max-width: 768px){
+    font-size: 32px;
+    
+  }
+}
 .home-section {
   height: 900px;
   background-image: url("../assets/img/background-svg-1.svg");
@@ -210,23 +231,25 @@ const filteredPortfolioItems = computed(() => {
   grid-gap: 16px;
 
   @media screen and (max-width: 768px) {
+    margin-top: 32px;
     grid-template-columns: 180px 180px;
-    grid-template-rows: 180px 240px 180px 116px;
+    grid-template-rows: 474px
   }
 }
 .hero-box-1 {
+  padding: 16px;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   border-radius: var(--main-border-radius);
 
   @media screen and (max-width: 768px) {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3;
   }
 }
 .hero-box-2 {
